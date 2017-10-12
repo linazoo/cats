@@ -1,0 +1,12 @@
+<style> form div { padding: 10px; } </style>
+
+<h2>Edit <%= @cat.name %>'s info bish</h2>
+<form action="/cats/<%= @cat.id %>" method="post">
+
+    <div>
+        <input name="_method" type="hidden" value="put" />
+        <input name="name" type="text" placeholder="<%=@cat.name%>">
+        <input name="color" type="text" placeholder="<%=@cat.color %>">
+        <input type="submit" />
+    </div>
+</form>

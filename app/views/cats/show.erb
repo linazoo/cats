@@ -1,0 +1,13 @@
+<h1>Found pussy</h1>
+<div class="contact-details">
+    <ul>
+        <li>id: <%= @cat.id %></li>
+        <li>First Name: <%= @cat.name %></li>
+        <li>color: <%= @cat.color %></li>
+    </ul>
+    <a href="/cats/<%= @cat.id %>/edit">edit this cat's information</a>
+    <form action="/cats/<%= @cat.id %>" method="post">
+        <input name="_method" type="hidden" value="delete" />
+        <input name="commit" type="submit" value="delete" />
+    </form>
+</div>
