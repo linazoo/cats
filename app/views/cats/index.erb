@@ -1,0 +1,7 @@
+<h1> Currently missing Cats </h1>
+
+<% @cats.each do |cat| %>
+  <p><a href="/cats/<%=cat.id%>"><%= cat.name %></a></p>
+<% end %>
+
+<h2><a href="/cats/new">create a new cat </a></h2>
